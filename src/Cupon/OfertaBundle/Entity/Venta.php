@@ -1,8 +1,8 @@
 <?php
 
-use Doctrine\ORM\Mapping as ORM;
-
 namespace Cupon\OfertaBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
 
 /** @ORM\Entity */
 class Venta {
@@ -10,11 +10,13 @@ class Venta {
     protected $fecha;
     
     /**
+     * @ORM\Id
      * @ORM\ManyToOne(targetEntity="Cupon\OfertaBundle\Entity\Oferta")
      */
     protected $oferta;
     
     /**
+     * @ORM\Id
      * @ORM\ManyToOne(targetEntity="Cupon\UsuarioBundle\Entity\Usuario")
      */
     protected $usuario;
