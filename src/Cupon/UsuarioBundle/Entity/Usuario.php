@@ -99,8 +99,6 @@ class Usuario
     private $numeroTarjeta;
 
     /**
-     * @var string
-     *
      * @ORM\ManyToOne(targetEntity="Cupon\CiudadBundle\Entity\Ciudad")
      */
     private $ciudad;
